@@ -1,0 +1,27 @@
+GET HTTP://localhost:5000/users
+
+###
+GET HTTP://localhost:5000/users/1
+
+###
+POST HTTP://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "hafidz Alfiansyah",
+    "email": "ha@gmail.com",
+    "no_tlp": "02122233"
+}
+
+###
+PATCH  HTTP://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "chun",
+    "email": "ha@gmail.com",
+    "no_tlp": "12122233"
+}
+
+###
+DELETE  HTTP://localhost:5000/users/2
