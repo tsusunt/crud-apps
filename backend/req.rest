@@ -24,4 +24,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE  HTTP://localhost:5000/users/2
+DELETE  HTTP://localhost:5000/users/3

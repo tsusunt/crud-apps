@@ -1,16 +1,18 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UserList from './components/UserList';
+import { AddUser } from './components/AddUser';
+import EditUser from './components/EditUser';
 
 function App() {
   return (
-    <div >
-      <UserList />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<UserList />} />
+        <Route path="/add" element={<AddUser />} />
+        <Route path="/edit/:id" element={<EditUser />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-
-export default App
+export default App;
